@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/banner_bg9"
+        android:id="@+id/webView_top">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/j20dp"
+            android:layout_marginRight="@dimen/j20dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/fanhui"
+            android:layout_height="wrap_content"
+            android:id="@+id/article_wen_back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:textSize="20sp"
+            android:id="@+id/article_wen_title"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="游戏详情" />
+
+
+
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/article_wen_webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_gravity="bottom"
+        android:id="@+id/webView_botton"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/wen_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刷新" />
+
+        <Button
+            android:id="@+id/wen_speak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="评论" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/wen_f"
+            android:text="Button" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/wen_speak"
+            android:text="Button" />
+    </RelativeLayout>
+
+</LinearLayout>

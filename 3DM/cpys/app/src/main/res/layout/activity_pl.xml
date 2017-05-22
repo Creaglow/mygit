@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/banner_bg9"
+        android:id="@+id/webView_top">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/j20dp"
+            android:layout_marginRight="@dimen/j20dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/fanhui"
+            android:layout_height="wrap_content"
+            android:id="@+id/PL_back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:textSize="20sp"
+            android:id="@+id/article_wen_title"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="游戏评论" />
+
+
+
+
+    </LinearLayout>
+
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:id="@+id/PL_listView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_gravity="bottom"
+        android:id="@+id/webView_botton"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_marginTop="@dimen/j10dp"
+            android:layout_toLeftOf="@+id/PL_button"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/j20dp"
+            android:id="@+id/PL_button" />
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PL_progressBar"
+        android:indeterminate="false" />
+
+</FrameLayout>
