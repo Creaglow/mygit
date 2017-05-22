@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/bg_color">
+    
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/j45dp"
+        android:background="@drawable/head"
+        android:id="@+id/rl_news_detail" >
+        
+        <Button 
+            android:id="@+id/news_button_back" 
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/j5dp"
+            android:text="@string/btn_text_back"
+             style="@style/btn_back_style"
+            />
+        
+        <TextView 
+            android:id="@+id/txtAppTitle1"
+            android:text="@string/news_main_home" 
+            android:layout_centerInParent="true"
+            style="@style/txt_app_title_style" />
+        
+    </RelativeLayout>
+    
+    <!-- webView加载页面  -->
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <WebView 
+            android:id="@+id/news_body_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        
+        <ProgressBar 
+            android:id="@+id/newsbody_progressBar"
+            style="@style/body_progressbar_style" 
+            />
+        
+        
+    </FrameLayout>
+    
+    
+
+</LinearLayout>

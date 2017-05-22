@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/j45dp"
+    android:orientation="vertical" 
+    android:background="@drawable/head">
+    
+    <TextView 
+        android:id="@+id/txtAppTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/news_name"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_22"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:shadowColor="#0f4689"
+        />
+    
+    
+    <FrameLayout 
+        style="@style/toolbar_fl_style"  >
+        
+        <ProgressBar 
+            android:id="@+id/topProgressBar1"
+            style="@style/toolbar_progressbar_style"
+            />
+        
+        <ImageButton 
+            android:id="@+id/topRefresh_btn1 "
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/topbtn_bg_selector"
+            
+            />
+        
+    </FrameLayout>
+    
+    
+    
+
+</RelativeLayout>
